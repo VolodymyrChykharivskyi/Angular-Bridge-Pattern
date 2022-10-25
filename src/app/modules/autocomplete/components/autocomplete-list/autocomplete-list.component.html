@@ -1,0 +1,9 @@
+<ng-container *ngIf="items; else placeholder">
+	<ul>
+		<li *ngFor="let item of items">
+			{{ item.name }}
+		</li>
+	</ul>
+</ng-container>
+
+<ng-template #placeholder> This list is empty </ng-template>
