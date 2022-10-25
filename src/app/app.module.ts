@@ -8,6 +8,7 @@ import { UserAutocompleteComponent } from './modules/user-autocomplete/user-auto
 import { GeoAutocompleteComponent } from './modules/geo-autocomplete/geo-autocomplete.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ChipsModule } from './modules/chips/chips.module';
 
 @NgModule({
 	declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 		AutocompleteModule,
 		UserAutocompleteComponent,
 		GeoAutocompleteComponent,
+		ChipsModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],

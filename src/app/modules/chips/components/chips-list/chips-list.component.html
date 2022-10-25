@@ -1,0 +1,7 @@
+<ng-container *ngFor="let item of options">
+	<ng-container *ngTemplateOutlet="customRef || default; context: { $implicit: item }"></ng-container>
+</ng-container>
+
+<ng-template #default let-item>
+	<app-chips-item [item]="item" (delete)="onDelete($event)"></app-chips-item>
+</ng-template>
